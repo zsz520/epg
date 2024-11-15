@@ -1,5 +1,11 @@
 自动同步到 `gitee`。
 
+**cqcu**
+
+```
+https://gitee.com/zsz520/raw/main/epg/cqcu.xml.gz
+```
+
 每 `2` 小时检测一次更新。
 
 **[112114](https://diyp.112114.xyz/)**
