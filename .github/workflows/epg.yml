@@ -41,7 +41,7 @@ jobs:
 
           cat files.json | jq -r 'keys[]' | while read -r filename; do
             echo "FILENAME_$filename=epg/$filename" >> $GITHUB_ENV
-            echo "FILENAME_${filename%.xml}.gz=epg/${filename%.xml}.gz" >> $GITHUB_ENV
+            echo "FILENAME_${filename%.xml}.gz=${filename%.xml}.gz" >> $GITHUB_ENV
           done
 
       - name: Commit and push changes
