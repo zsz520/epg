@@ -3,7 +3,7 @@
 **cqcu**
 
 ```
-https://gitee.com/zsz520/raw/main/epg/cqcu.xml.gz
+https://gitee.com/zsz520/epg/raw/main/cqcu.xml.gz
 ```
 
 每 `2` 小时检测一次更新。
