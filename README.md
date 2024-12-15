@@ -22,7 +22,7 @@ https://gitee.com/taksssss/tv/raw/main/epg/51zmt.xml
 https://gitee.com/taksssss/tv/raw/main/epg/51zmt.xml.gz
 ```
 
-**[erw](https://epg.erw.cc/)**
+**[erw](https://e.erw.cc/)**
 
 ```
 https://gitee.com/taksssss/tv/raw/main/epg/erw.xml
