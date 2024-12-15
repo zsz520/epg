@@ -34,6 +34,12 @@ https://gitee.com/taksssss/tv/raw/main/epg/erw.xml.gz
 ```
 https://gitee.com/taksssss/tv/raw/main/epg/epgpw_cn.xml
 https://gitee.com/taksssss/tv/raw/main/epg/epgpw_cn.xml.gz
+
+https://gitee.com/taksssss/tv/raw/main/epg/epgpw_hk.xml
+https://gitee.com/taksssss/tv/raw/main/epg/epgpw_hk.xml.gz
+
+https://gitee.com/taksssss/tv/raw/main/epg/epgpw_tw.xml
+https://gitee.com/taksssss/tv/raw/main/epg/epgpw_tw.xml.gz
 ```
 
 **[livednow](https://assets.livednow.com/guide.html)**
@@ -42,3 +48,4 @@ https://gitee.com/taksssss/tv/raw/main/epg/epgpw_cn.xml.gz
 https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml
 https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml.gz
 ```
+
