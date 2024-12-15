@@ -4,5 +4,6 @@
   "erw.xml": "https://e.erw.cc/all.xml",
   "epgpw_cn.xml": "https://epg.pw/xmltv/epg_CN.xml",
   "epgpw_hk.xml": "https://epg.pw/xmltv/epg_HK.xml",
+  "epgpw_tw.xml": "https://epg.pw/xmltv/epg_TW.xml",
   "livednow.xml": "https://assets.livednow.com/epg.xml"
 }
