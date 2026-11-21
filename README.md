@@ -59,16 +59,19 @@ https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml.gz
 
 ```
 https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml.gz
+https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml
 ```
 
 **fjyd / FJYD-IPTV（福建移动IPTV）**
 
 ```
 https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml.gz
+https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml
 ```
 
 **yangshipin / YSP-EPG（央视频）**
 
 ```
 https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml.gz
+https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml
 ```
