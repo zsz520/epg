@@ -31,6 +31,7 @@ ERW 使用作者公开的 [GitHub 压缩源](https://github.com/kuke31/xmlgz)。
 | CQCT-IPTV（重庆电信 IPTV） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml.gz) |
 | FJYD-IPTV（福建移动 IPTV） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml.gz) |
 | YSP-EPG（央视频） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml.gz) |
+| SDGD-EPG（山东广电） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml.gz) |
 | bjiptv | — | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/bjiptv.xml.gz) |
 | chuanliu | — | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/chuanliu.xml.gz) |
 | cqlaidian | — | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/cqlaidian.xml.gz) |
@@ -45,10 +46,3 @@ ERW 使用作者公开的 [GitHub 压缩源](https://github.com/kuke31/xmlgz)。
 - 同仓库的 `sync` 通知使用 Actions 自动生成的 `GITHUB_TOKEN`，无需配置 `ACCESS_TOKEN`。
 
 新增或修改第三方源时，编辑 `files.json` 中的文件名与上游 URL 即可。支持 XML 和 GZ 上游，配置中的文件名统一以 `.xml` 结尾；配置提交后会自动运行一次更新。
-
-**sdgd / SDGD-EPG（山东广电）**
-
-```
-https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml.gz
-https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml
-```
