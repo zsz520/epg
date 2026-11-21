@@ -65,20 +65,9 @@ jobs:
         if: ${{ !cancelled() && steps.download.outcome == 'failure' }}
         run: exit 1
 
-      - name: Check sync configuration
-        if: steps.commit.outputs.changed == 'true'
-        id: sync
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          if [ -n "$ACCESS_TOKEN" ]; then
-            echo "enabled=true" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Repository Dispatch
-        if: steps.sync.outputs.enabled == 'true'
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          repository: zsz520/epg
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
           event-type: sync
