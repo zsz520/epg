@@ -45,3 +45,10 @@ ERW 使用作者公开的 [GitHub 压缩源](https://github.com/kuke31/xmlgz)。
 - 同仓库的 `sync` 通知使用 Actions 自动生成的 `GITHUB_TOKEN`，无需配置 `ACCESS_TOKEN`。
 
 新增或修改第三方源时，编辑 `files.json` 中的文件名与上游 URL 即可。支持 XML 和 GZ 上游，配置中的文件名统一以 `.xml` 结尾；配置提交后会自动运行一次更新。
+
+**sdgd / SDGD-EPG（山东广电）**
+
+```
+https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml.gz
+https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml
+```
