@@ -6387,9 +6387,6 @@
   <programme start="20261121202500 +0800" stop="20261121223500 +0800" channel="山东教育卫视">
     <title lang="zh">等着我</title>
   </programme>
-  <programme start="20261122004000 +0800" stop="20261122012000 +0800" channel="山东教育卫视">
-    <title lang="zh">地雷英雄传</title>
-  </programme>
   <programme start="20261122012000 +0800" stop="20261122020500 +0800" channel="山东教育卫视">
     <title lang="zh">地雷英雄传</title>
   </programme>
@@ -18504,10 +18501,10 @@
   <programme start="20261121223000 +0800" stop="20261121233000 +0800" channel="CCTV5">
     <title lang="zh">德甲第10轮:法兰克福-霍芬海姆</title>
   </programme>
-  <programme start="20261121233000 +0800" stop="20261122003000 +0800" channel="CCTV5">
+  <programme start="20261121233000 +0800" stop="20261122002700 +0800" channel="CCTV5">
     <title lang="zh">德甲第10轮:法兰克福-霍芬海姆</title>
   </programme>
-  <programme start="20261122003000 +0800" stop="20261122022000 +0800" channel="CCTV5">
+  <programme start="20261122002700 +0800" stop="20261122022000 +0800" channel="CCTV5">
     <title lang="zh">法甲第11轮:尼斯-巴黎圣日耳曼</title>
   </programme>
   <programme start="20261122022000 +0800" stop="20261122023600 +0800" channel="CCTV5">
@@ -32694,10 +32691,10 @@
   <programme start="20261121230000 +0800" stop="20261121231700 +0800" channel="江苏卫视4K">
     <title lang="zh">晚间新闻</title>
   </programme>
-  <programme start="20261121231700 +0800" stop="20261122001200 +0800" channel="江苏卫视4K">
+  <programme start="20261121231700 +0800" stop="20261122001300 +0800" channel="江苏卫视4K">
     <title lang="zh">一生一世</title>
   </programme>
-  <programme start="20261122001200 +0800" stop="20261122010200 +0800" channel="江苏卫视4K">
+  <programme start="20261122001300 +0800" stop="20261122010200 +0800" channel="江苏卫视4K">
     <title lang="zh">一生一世</title>
   </programme>
   <programme start="20261122010200 +0800" stop="20261122015300 +0800" channel="江苏卫视4K">
@@ -34017,10 +34014,10 @@
   <programme start="20261121234500 +0800" stop="20261121234800 +0800" channel="天津卫视">
     <title lang="zh">天气预报</title>
   </programme>
-  <programme start="20261121234800 +0800" stop="20261122003500 +0800" channel="天津卫视">
+  <programme start="20261121234800 +0800" stop="20261122001500 +0800" channel="天津卫视">
     <title lang="zh">生死抉择-通道转兵(1)</title>
   </programme>
-  <programme start="20261122003500 +0800" stop="20261122041000 +0800" channel="天津卫视">
+  <programme start="20261122001500 +0800" stop="20261122041000 +0800" channel="天津卫视">
     <title lang="zh">黄大妮(8)</title>
   </programme>
   <programme start="20261122041000 +0800" stop="20261122045300 +0800" channel="天津卫视">
@@ -38859,9 +38856,6 @@
   <programme start="20261121230000 +0800" stop="20261121233000 +0800" channel="湖北卫视">
     <title lang="zh">长江新闻号</title>
   </programme>
-  <programme start="20261122001700 +0800" stop="20261122010200 +0800" channel="湖北卫视">
-    <title lang="zh">激战</title>
-  </programme>
   <programme start="20261122010200 +0800" stop="20261122015100 +0800" channel="湖北卫视">
     <title lang="zh">激战</title>
   </programme>
@@ -39329,12 +39323,6 @@
   </programme>
   <programme start="20261121223500 +0800" stop="20261121224400 +0800" channel="四川卫视4K">
     <title lang="zh">天涯共此诗</title>
-  </programme>
-  <programme start="20261122000100 +0800" stop="20261122004300 +0800" channel="四川卫视4K">
-    <title lang="zh">胭脂(39)</title>
-  </programme>
-  <programme start="20261122004300 +0800" stop="20261122012400 +0800" channel="四川卫视4K">
-    <title lang="zh">胭脂(40)</title>
   </programme>
   <programme start="20261122012400 +0800" stop="20261122020200 +0800" channel="四川卫视4K">
     <title lang="zh">川菜开放日</title>
@@ -42642,9 +42630,6 @@
   <programme start="20261121225100 +0800" stop="20261121232300 +0800" channel="江西卫视">
     <title lang="zh">新闻夜航</title>
   </programme>
-  <programme start="20261122002600 +0800" stop="20261122011200 +0800" channel="江西卫视">
-    <title lang="zh">锻刀之绝地重生(2)</title>
-  </programme>
   <programme start="20261122011200 +0800" stop="20261122020300 +0800" channel="江西卫视">
     <title lang="zh">梅花红桃(15)</title>
   </programme>
@@ -43424,9 +43409,6 @@
   </programme>
   <programme start="20261121232800 +0800" stop="20261122001900 +0800" channel="重庆卫视">
     <title lang="zh">五号特工组之偷天换月(4)</title>
-  </programme>
-  <programme start="20261122001900 +0800" stop="20261122012400 +0800" channel="重庆卫视">
-    <title lang="zh">中国故事</title>
   </programme>
   <programme start="20261122012400 +0800" stop="20261122023100 +0800" channel="重庆卫视">
     <title lang="zh">加油!好少年</title>
@@ -54182,9 +54164,6 @@
   </programme>
   <programme start="20261121232300 +0800" stop="20261121235000 +0800" channel="兵团卫视">
     <title lang="zh">遇见好书(69)</title>
-  </programme>
-  <programme start="20261121235000 +0800" stop="20261122013000 +0800" channel="兵团卫视">
-    <title lang="zh">地道战</title>
   </programme>
   <programme start="20261122013000 +0800" stop="20261122022000 +0800" channel="兵团卫视">
     <title lang="zh">人世间(43)</title>
