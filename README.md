@@ -8,6 +8,12 @@ https://gitee.com/zsz520/epg/raw/main/cqcu.xml.gz
 
 每 `2` 小时检测一次更新。
 
+`files.json` 配置的第三方源由本仓库独立下载到 `epg/`，同时生成 `.xml` 和 `.xml.gz`；根目录由 `epg-src` 发布的文件保持原有发布方式。
+
+下载会跟随重定向，并校验 HTTP 状态、完整 XML、`tv` 根节点及非空频道/节目。单个源失败时保留有效旧文件，其余源继续更新；全部源失败才将任务标记为失败。每次运行的 Actions 摘要会列出各源结果。旧脚本误存的 HTML 等无效缓存会清除，上游恢复后自动重建。`PROXY_URL`（可选）仅用于 livednow；`ACCESS_TOKEN`（可选）用于更新后的 `sync` 通知。
+
+ERW 使用作者公开的 [GitHub 压缩源](https://github.com/kuke31/xmlgz)，下载后解压并保留本仓库原有 `erw.xml` / `erw.xml.gz` 文件名。
+
 **[112114](https://diyp.112114.xyz/)**
 
 ```

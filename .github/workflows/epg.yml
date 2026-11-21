@@ -4,62 +4,79 @@ on:
   schedule:
     - cron: '0 */2 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - files.json
+      - scripts/update_epg.py
+      - tests/test_update_epg.py
+      - .github/workflows/epg.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epg-update
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 20
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: main
 
-      - name: Install jq (for parsing JSON)
-        run: sudo apt-get install -y jq
+      - name: Test downloader
+        run: python3 -m unittest discover -s tests -v
 
       - name: Download files from files.json
+        id: download
+        continue-on-error: true
         env:
           PROXY_URL: ${{ secrets.PROXY_URL }}
-        run: |
-          mkdir -p epg
-          cat files.json | jq -r 'to_entries[] | "\(.key) \(.value)"' | while read -r filename url; do
-            echo "Downloading $filename from $url"
-            xml_file="epg/$filename"
-            xml_file_tmp="$xml_file.tmp"
-            if [[ "$url" == "https://assets.livednow.com/epg.xml" ]]; then
-              curl --retry 5 -x "$PROXY_URL" -o "$xml_file_tmp" "$url"
-            else
-              curl --retry 5 -o "$xml_file_tmp" "$url"
-            fi
-            if grep -iq "404 Not Found" "$xml_file_tmp"; then
-              echo "文件包含404错误"
-            elif [ ! -f "$xml_file" ] || ! cmp -s "$xml_file_tmp" "$xml_file"; then
-              mv "$xml_file_tmp" "$xml_file"
-              gzip -kf "$xml_file"
-            fi
-            rm -f "$xml_file_tmp"
-          done
-
-          cat files.json | jq -r 'keys[]' | while read -r filename; do
-            echo "FILENAME_$filename=epg/$filename" >> $GITHUB_ENV
-            echo "FILENAME_${filename%.xml}.gz=epg/${filename%.xml}.gz" >> $GITHUB_ENV
-          done
+        run: python3 scripts/update_epg.py
 
       - name: Commit and push changes
+        id: commit
+        if: ${{ !cancelled() && steps.download.outcome != 'skipped' }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add epg/*
-
+          git add -- epg/
           if ! git diff --cached --quiet; then
             now_time=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
             git commit -m "更新时间：$now_time"
-            git push origin main || echo "推送到GitHub失败"
-          else
-            echo "没有文件可提交"
+            # epg-src may publish other files while these downloads run.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then
+                echo "changed=true" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              sleep "$attempt"
+            done
+            exit 1
+          fi
+
+      - name: Check download result
+        if: ${{ !cancelled() && steps.download.outcome == 'failure' }}
+        run: exit 1
+
+      - name: Check sync configuration
+        if: steps.commit.outputs.changed == 'true'
+        id: sync
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          if [ -n "$ACCESS_TOKEN" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Repository Dispatch
+        if: steps.sync.outputs.enabled == 'true'
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
