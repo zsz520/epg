@@ -60,3 +60,9 @@ https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml.gz
 ```
 https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml.gz
 ```
+
+**yangshipin / YSP-EPG（央视频）**
+
+```
+https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml.gz
+```
