@@ -49,3 +49,9 @@ https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml
 https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml.gz
 ```
 
+**cqiptv**
+
+```
+https://raw.githubusercontent.com/zsz520/epg/main/cqiptv.xml
+https://raw.githubusercontent.com/zsz520/epg/main/cqiptv.xml.gz
+```
