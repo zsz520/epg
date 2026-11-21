@@ -49,9 +49,8 @@ https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml
 https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml.gz
 ```
 
-**cqiptv**
+**cqct-iptv / CQCT-IPTV（重庆电信IPTV）**
 
 ```
-https://raw.githubusercontent.com/zsz520/epg/main/cqiptv.xml
-https://raw.githubusercontent.com/zsz520/epg/main/cqiptv.xml.gz
+https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml.gz
 ```
