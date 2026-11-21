@@ -32,6 +32,7 @@ ERW 使用作者公开的 [GitHub 压缩源](https://github.com/kuke31/xmlgz)。
 | FJYD-IPTV（福建移动 IPTV） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml.gz) |
 | YSP-EPG（央视频） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/yangshipin.xml.gz) |
 | SDGD-EPG（山东广电） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/sdgd.xml.gz) |
+| GZYD-EPG（贵州移动 IPTV） | [XML](https://raw.githubusercontent.com/zsz520/epg/main/gzyd.xml) | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/gzyd.xml.gz) |
 | bjiptv | — | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/bjiptv.xml.gz) |
 | chuanliu | — | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/chuanliu.xml.gz) |
 | cqlaidian | — | [GZ](https://raw.githubusercontent.com/zsz520/epg/main/cqlaidian.xml.gz) |
