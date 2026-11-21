@@ -54,3 +54,9 @@ https://gitee.com/taksssss/tv/raw/main/epg/livednow.xml.gz
 ```
 https://raw.githubusercontent.com/zsz520/epg/main/cqct-iptv.xml.gz
 ```
+
+**fjyd / FJYD-IPTV（福建移动IPTV）**
+
+```
+https://raw.githubusercontent.com/zsz520/epg/main/fjyd.xml.gz
+```
